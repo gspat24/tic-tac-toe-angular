@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-exam-tictactoe": {
+      "hosting": {
+        "tic-tac-toe-angular": [
+          "angular-exam-tictactoe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "staging": "angular-exam-tictactoe"
+  }
+}

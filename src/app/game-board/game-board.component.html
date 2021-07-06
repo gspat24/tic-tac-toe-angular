@@ -1,0 +1,26 @@
+<div class="
+  d-flex
+  p-5
+  flex-column
+  justify-content-center
+  align-items-center
+  w-100">
+
+  <button
+    type="button"
+    class="btn btn-primary btn-lg btn-block my-3"
+    (click)="newGame()">
+      START NEW GAME
+  </button>
+
+  <h2 class="my-3" *ngIf="winner">
+    Winner Player <span [style.color]="winner === 'X' ? '#0d6efd' : '#198754'">{{ winner }}</span> won the game!
+  </h2>
+
+  <main>
+    <app-block *ngFor="let block of blocks; let i = index" [value]="block" (click)="clickBlocks(i)"></app-block>
+  </main>
+
+  <h1 class="my-3">PLAYER: <span [style.color]="player === 'X' ? '#0d6efd' : '#198754'">{{ player }}</span> </h1>
+
+</div>

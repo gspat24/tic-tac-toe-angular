@@ -1,0 +1,7 @@
+<button
+  class="btn h-100 w-100 d-flex justify-content-center align-items-center"
+  type="button"
+  [ngClass]="{'btn-primary': value === 'X', 'btn-success': value === 'O'}"
+  *ngIf="value">
+    {{ value }}
+</button>
